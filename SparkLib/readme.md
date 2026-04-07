@@ -107,8 +107,8 @@ export LABDATA_PYSPARK=/opt/workspace/$USER/notebooks/labdata_v1.2
 export HADOOP_CONF_DIR=/etc/hive/conf
 export SPARK_HOME=/opt/cloudera/parcels/SPARK2-2.2.0.cloudera4-1.cdh5.13.3.p0.603055/lib/spark2
 export JAVA_HOME=/usr/java/jdk1.8.0_171-amd64
-export PYSPARK_DRIVER_PYTHON=/opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/bin/python
-export PYSPARK_PYTHON=/opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/bin/python
+export PYSPARK_DRIVER_PYTHON=/opt/cloudera/parcels/PYENV.ZNO0059623792/bin/python
+export PYSPARK_PYTHON=/opt/cloudera/parcels/PYENV.ZNO0059623792/bin/python
 ```
 
 ## REQUIREMENTS

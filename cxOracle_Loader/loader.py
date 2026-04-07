@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#!/home/ektov-av/bin/python35
+#!/usr/bin/env python3
 import os
 import sys
 os.environ['NLS_LANG'] = 'RUSSIAN_RUSSIA.AL32UTF8'

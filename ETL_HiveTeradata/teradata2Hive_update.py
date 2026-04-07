@@ -1,4 +1,4 @@
-#!/home/ektov/bin/python35
+#!/usr/bin/env python3
 import os
 import sys
 
@@ -6,7 +6,7 @@ curruser = os.environ.get('USER')
 
 sys.path.insert(0, './src')
 sys.path.insert(0, '/opt/workspace/{user}/notebooks/support_library/'.format(user=curruser))
-sys.path.insert(0, '/opt/workspace/{user}/libs/python3.5/site-packages/'.format(user=curruser))
+sys.path.insert(0, '/opt/workspace/{user}/libs/python3.12/site-packages/'.format(user=curruser))
 sys.path.insert(0, '/opt/workspace/{user}/notebooks/labdata/lib/'.format(user=curruser))
 
 
@@ -48,10 +48,10 @@ os.chdir('/opt/workspace/{user}/notebooks/TERADATA_UPD/'.format(user=curruser))
 os.environ['PATH'] ='''PATH=/usr/local/bin:/usr/bin:
                             /home/$USER/bin:/opt/python/virtualenv/jupyter/lib/node_modules/.bin:
                             /opt/python/virtualenv/jupyter/bin:/opt/python/virtualenv/jupyter/bin:
-                            /sbin:/bin:/usr/sbin:/usr/bin:/opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/bin:
-                            /opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/sbin:
-                            /opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/usr/bin:
-                            /opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/bigartm/bin:
+                            /sbin:/bin:/usr/sbin:/usr/bin:/opt/cloudera/parcels/PYENV.ZNO0059623792/bin:
+                            /opt/cloudera/parcels/PYENV.ZNO0059623792/sbin:
+                            /opt/cloudera/parcels/PYENV.ZNO0059623792/usr/bin:
+                            /opt/cloudera/parcels/PYENV.ZNO0059623792/bigartm/bin:
                             /opt/workspace/$USER/notebooks/drivers/:/usr/java/jdk1.8.0_131/jre/bin'''
 
 

@@ -8,10 +8,10 @@ cd /home/$USER/ && mkdir bin
 # ln -s /data/machine_learning/anaconda2/bin/ipython /home/$USER//bin/ipython
 # ln -s /data/machine_learning/anaconda2/bin/python /home/$USER/bin/python27
 
-# python 35 install
-ln -s /opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/bin/python /home/$USER//bin/python35
-ln -s /opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/bin/ipython /home/$USER//bin/ipython35
-ln -s /opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/bin/pip /home/$USER/bin/pip35
+# python 3.12 install
+ln -s /opt/cloudera/parcels/PYENV.ZNO0059623792/bin/python3.12 /home/$USER//bin/python3.12
+ln -s /opt/cloudera/parcels/PYENV.ZNO0059623792/bin/ipython /home/$USER//bin/ipython3.12
+ln -s /opt/cloudera/parcels/PYENV.ZNO0059623792/bin/pip /home/$USER/bin/pip3.12
 
 #echo "export PATH=$PATH:$HOME/bin" >> /home/$USER/.bash_profile
 sleep 1
@@ -36,8 +36,8 @@ sleep 1
 #echo "PS1='\[\e[1;33m\]\u@\h \w ->\n\[\e[1;36m\] \@ \d\$\[\e[m\] '" >> /home/$USER/.bash_profile
 #source /home/$USER/.bash_profile
 
-# python35 libs
-#mkdir -p /home/$USER/python35-libs/lib/python3.5/site-packages
-#echo "export PYTHONPATH=$PYTHONPATH:$HOME/python35-libs/lib/python3.5/site-packages" >> /home/$USER/.bash_profile
+# python3.12 libs
+#mkdir -p /home/$USER/python312-libs/lib/python3.12/site-packages
+#echo "export PYTHONPATH=$PYTHONPATH:$HOME/python312-libs/lib/python3.12/site-packages" >> /home/$USER/.bash_profile
 source /home/$USER/.bash_profile
 

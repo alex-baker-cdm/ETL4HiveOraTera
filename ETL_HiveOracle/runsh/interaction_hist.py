@@ -1,11 +1,11 @@
-#!/opt/workspace/ektov1-av_ca-sbrf-ru/bin/python35
+#!/usr/bin/env python3
 import os
 import sys
 curruser = os.environ.get('USER')
 
 sys.path.insert(0, './src')
 sys.path.insert(0, '/opt/workspace/{user}/notebooks/support_library/'.format(user=curruser))
-sys.path.insert(0, '/opt/workspace/{user}/libs/python3.5/site-packages/'.format(user=curruser))
+sys.path.insert(0, '/opt/workspace/{user}/libs/python3.12/site-packages/'.format(user=curruser))
 sys.path.insert(0, '/opt/workspace/{user}/notebooks/labdata/lib/'.format(user=curruser))
 
 
