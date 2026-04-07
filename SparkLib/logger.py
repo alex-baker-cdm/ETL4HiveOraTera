@@ -1,4 +1,4 @@
-#!/home/ektov1-av_ca-sbrf-ru/bin/python35
+#!/usr/bin/env python3
 
 import os, sys
 import logging

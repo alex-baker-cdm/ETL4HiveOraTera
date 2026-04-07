@@ -73,7 +73,7 @@ class SparkConnector(object):
         # os.environ['SPARK_HOME'] = spark_home
         # os.environ['HADOOP_CONF_DIR'] = '/etc/hive/conf'
         # os.environ['PYSPARK_DRIVER_PYTHON'] = 'python'
-        # os.environ['PYSPARK_PYTHON'] = '/opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/bin/python'
+        # os.environ['PYSPARK_PYTHON'] = '/opt/cloudera/parcels/PYENV.ZNO0059623792/bin/python'
         sys.path.insert(0, os.path.join(spark_home, 'python'))
         sys.path.insert(0, os.path.join(spark_home, 'python/lib/py4j-0.10.7-src.zip'))
         pyspark = importlib.import_module('pyspark')

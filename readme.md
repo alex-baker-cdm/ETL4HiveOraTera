@@ -1,5 +1,7 @@
 # ETL scripts for CRUD communication between Hive-Oracle-Teradata using PySpark with jDBC as backend driver  
 
+> **Python Version**: This project targets **Python 3.12 LTS** for long-term support and stability.
+
 *PROJECT STRUCTURE*:
 - `cxOracle_Loader/`
     - `loader.py`: class with Oracle DB connection and build-in getter/loader methods for working with data rows 

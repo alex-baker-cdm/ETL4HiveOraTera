@@ -1,4 +1,4 @@
-#!/opt/workspace/ektov1-av_ca-sbrf-ru/bin/python35
+#!/usr/bin/env python3
 
 import os
 import sys
@@ -30,12 +30,12 @@ isUseOptWorkspace = False
 if isUseOptWorkspace:
     sys.path.insert(0, '/opt/workspace/{}/notebooks/ecom_model/src/'.format(curruser))
     sys.path.insert(0, '/opt/workspace/{}/notebooks/support_library/'.format(curruser))
-    sys.path.insert(0, '/opt/workspace/{}/libs/python3.5/site-packages/'.format(curruser))
+    sys.path.insert(0, '/opt/workspace/{}/libs/python3.12/site-packages/'.format(curruser))
     sys.path.insert(0, '/opt/workspace/{}/notebooks/labdata/lib/'.format(curruser))
 else:
     sys.path.insert(0, '/home/{}/notebooks/ecom_model/src/'.format(curruser))
     sys.path.insert(0, '/home/{}/notebooks/support_library/'.format(curruser))
-    sys.path.insert(0, '/home/{}/python35-libs/lib/python3.5/site-packages/'.format(curruser))
+    sys.path.insert(0, '/home/{}/python312-libs/lib/python3.12/site-packages/'.format(curruser))
     sys.path.insert(0, '/home/{}/notebooks/labdata/lib/'.format(curruser))
 
 

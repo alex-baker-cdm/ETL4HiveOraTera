@@ -1,4 +1,4 @@
-#!/home/ektov1-av_ca-sbrf-ru/bin/python35
+#!/usr/bin/env python3
 import os
 import sys
 curruser = os.environ.get('USER')
@@ -9,11 +9,11 @@ os.chdir(_labdata)
 
 if curruser in os.listdir("/opt/workspace/"):
     sys.path.insert(0, '/opt/workspace/{user}/notebooks/support_library/'.format(user=curruser))
-    sys.path.insert(0, '/opt/workspace/{user}/libs/python3.5/site-packages/'.format(user=curruser))
+    sys.path.insert(0, '/opt/workspace/{user}/libs/python3.12/site-packages/'.format(user=curruser))
     # sys.path.insert(0, '/opt/workspace/{user}/notebooks/labdata_v1.2/lib/'.format(user=curruser))
 else:
     sys.path.insert(0, '/home/{}/notebooks/support_library/'.format(curruser))
-    sys.path.insert(0, '/home/{}/python35-libs/lib/python3.5/site-packages/'.format(curruser))
+    sys.path.insert(0, '/home/{}/python312-libs/lib/python3.12/site-packages/'.format(curruser))
     # sys.path.insert(0, '/home/{}/notebooks/labdata/lib/'.format(curruser))
 
 #import tendo.singleton
