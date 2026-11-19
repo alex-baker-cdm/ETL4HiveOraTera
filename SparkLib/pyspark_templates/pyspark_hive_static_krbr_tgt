@@ -1,4 +1,5 @@
 # Default SparkConf parameters for static allocation
+# ${USER} is replaced with the current user by config.parse_config; never hard-code another user's paths here.
 
 [SparkConf]
 
@@ -31,15 +32,15 @@ spark.shuffle.manager: sort
 spark.blacklist.task.maxTaskAttemptsPerNode: 13
 spark.blacklist.task.maxTaskAttemptsPerExecutor: 13
 spark.task.maxFailures: 15
-spark.driver.extraLibraryPath: /opt/workspace/ektov1-av_ca-sbrf-ru/notebooks/support_library/
-spark.executor.extraLibraryPath: /opt/workspace/ektov1-av_ca-sbrf-ru/notebooks/support_library/
+spark.driver.extraLibraryPath: /opt/workspace/${USER}/notebooks/support_library/
+spark.executor.extraLibraryPath: /opt/workspace/${USER}/notebooks/support_library/
 spark.driver.extraClassPath: /opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/usr/lib/oracle/12.2/client64/lib/ojdbc8.jar
 spark.executor.extraClassPath: /opt/cloudera/parcels/PYENV.ZNO0059623792-3.5.pyenv.p0.2/usr/lib/oracle/12.2/client64/lib/ojdbc8.jar
-spark.jars: /opt/workspace/ektov1-av_ca-sbrf-ru/notebooks/drivers/terajdbc4.jar,/opt/workspace/ektov1-av_ca-sbrf-ru/notebooks/drivers/tdgssconfig.jar
+spark.jars: /opt/workspace/${USER}/notebooks/drivers/terajdbc4.jar,/opt/workspace/${USER}/notebooks/drivers/tdgssconfig.jar
 spark.executor.extraJavaOptions: -Djavax.security.auth.useSubjectCredsOnly=false
 spark.driver.extraJavaOptions: -Djavax.security.auth.useSubjectCredsOnly=false
-spark.yarn.principal: ektov1-av_ca-sbrf-ru@DF.SBRF.RU
-spark.yarn.keytab: /home/ektov1-av_ca-sbrf-ru/keytab/user.keytab
+spark.yarn.principal: ${USER}@DF.SBRF.RU
+spark.yarn.keytab: /home/${USER}/keytab/user.keytab
 spark.sql.parquet.mergeScheme: false
 spark.sql.parquet.enable.summary-metadata: false
 spark.hadoop.dfs.replication: 2
